@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js" defer></script>
+    <title>התלמידים שלי</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="logout-button" role="button">התנתקות</button>
+
+    <main id="main">
+      <section id="login-section">
+        <h2>התחברות</h2>
+        <form id="login-form">
+          <input type="text" id="teacher-name" placeholder="שם" required />
+          <input
+            type="text"
+            id="teacher-id"
+            placeholder="תעודת זהות"
+            required
+          />
+          <button type="submit">התחברות</button>
+        </form>
+        <p
+          id="login-error"
+          style="color: red; display: none; text-align: center"
+        >
+          השם או מס' תעודת הזהות אינם נכונים
+        </p>
+      </section>
+
+      <section id="tasks-section">
+        <h2>מערכת ניהול תלמידים 👨‍🏫</h2>
+        <ul id="tasks-list"></ul>
+      </section>
+
+      <div id="students-tasks-forms-wrapper">
+        <form id="add-student-form">
+          <h3>הוספת תלמיד/ה</h3>
+          <input type="text" id="student-name" placeholder="שם" required />
+          <input type="text" id="student-class" placeholder="כיתה" required />
+          <input
+            type="text"
+            id="student-phone"
+            placeholder="מס' טלפון"
+            required
+          />
+          <button type="submit">הוסף</button>
+        </form>
+
+        <form id="add-task-form">
+          <h3>הוספת מטלה</h3>
+          <input type="text" id="task-subject" placeholder="מקצוע" required />
+          <textarea
+            id="task-description"
+            placeholder="תיאור"
+            required
+          ></textarea>
+          <select id="task-student" required></select>
+          <button type="submit">הוסף</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

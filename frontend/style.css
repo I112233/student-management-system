@@ -1,0 +1,207 @@
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+
+header {
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section ul {
+  justify-content: center;
+  align-items: center;
+}
+
+#students-tasks-wrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+#students-section {
+  border-left: 2px solid black;
+  padding-left: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+input,
+textarea,
+select,
+button {
+  padding: 0.75rem;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: black;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  border: solid 1px gray;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+li.with-nested-list {
+  border-bottom: none;
+}
+
+.login-error {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #students-tasks-wrapper {
+    flex-direction: column;
+  }
+}
+
+h3 {
+  text-align: center;
+}
+
+.students-tasks-forms-wrapper {
+  display: flex;
+}
+
+#students-tasks-forms-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#students-tasks-forms-wrapper form {
+  width: 48%;
+}
+
+textarea {
+  height: 1.2rem;
+}
+
+select {
+  z-index: 10;
+}
+
+#logout-button {
+  margin-top: 10px;
+  margin-right: 10px;
+  appearance: none;
+  background-color: #fafbfc;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+    rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+  height: 35px;
+}
+
+#logout-button:hover {
+  background-color: #f3f4f6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+#logout-button:disabled {
+  background-color: #fafbfc;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959da5;
+  cursor: default;
+}
+
+#logout-button:active {
+  background-color: #edeff2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+#logout-button:focus {
+  outline: 1px transparent;
+}
+
+#logout-button:before {
+  display: none;
+}
+
+#logout-button:-webkit-details-marker {
+  display: none;
+}
+
+#tasks-list {
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  text-align: justify;
+  margin-right: 25px;
+  font-size: 20px;
+}
+
+#tasks-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
